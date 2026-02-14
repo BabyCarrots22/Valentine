@@ -2,9 +2,7 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
 import { getDatabase, ref, set, get, onValue } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js';
 
-// IMPORTANT: ต้องเปลี่ยนเป็น Config ของคุณเองจาก Firebase Console
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// ✅ Firebase Config ของคุณ (ถูกต้องแล้ว)
 const firebaseConfig = {
   apiKey: "AIzaSyBa5pa7NS6XrS1yNd3Vl0SPxMamdczVXuc",
   authDomain: "valentine-project-e9c53.firebaseapp.com",
@@ -20,4 +18,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
+// ✅ Export ให้ครบทุกฟังก์ชันที่ใช้
 export { db, ref, set, get, onValue };
